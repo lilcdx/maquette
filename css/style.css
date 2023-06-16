@@ -1,0 +1,121 @@
+.colored_bg{
+    color:white;
+}
+header{
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header::before {    
+    content: "";
+    background-image: url("../img/detoxcuresmoothie.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.7;
+}
+
+header h1{
+    padding-bottom: 3em;
+    padding-top: 2em;
+    position: relative;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 0.1em;
+    font-size: xxx-large;
+}
+
+#header_links_logo{
+    width: 100%;
+    padding: 3em;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header_links_logo img{
+    height: 60px;
+}
+
+#header_links{
+    width: 20em;
+    display: flex;
+    justify-content: space-around;
+}
+#div1{
+    display:flex;
+    padding: 3em 8em;
+    align-items: center;
+}
+
+#div1 img{
+    object-fit: cover;
+    width: 20em;
+    max-width:40%;
+}
+
+#devise{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em;
+    width: 70%;
+}
+
+#div2{
+    background-image: linear-gradient(pink, orange);
+    text-align: center;
+    padding: 5em;
+}
+
+.fabrication_box{
+    margin:5em;
+}
+
+#div3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+#concept_boxes{
+    display: flex;
+}
+
+.concept_box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 3em;
+}
+
+footer{
+    background-color: orange;
+    text-align: center;
+    padding: 1em 0em;
+}
+
+@media screen and (max-width: 700px) {
+    header h1{
+        text-align: center;
+    }
+    #div1{
+        flex-direction: column;
+        padding: 3em 0em;
+    }
+    #devise{
+        padding:0px;
+        text-align: center;
+    }
+    #concept_boxes{
+        flex-direction: column;
+    }
+}
